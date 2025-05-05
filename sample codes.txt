@@ -1,0 +1,64 @@
+class student:
+    def __init__(self,name,num):
+        self.name=name
+        self.num=num
+    def display(self):
+        print(f"name:{self.name}, rollno:{self.num}")
+s1= student('tony', 101)
+s2= student('mike', 102)
+s1.display()
+s2.display()          
+
+
+
+
+
+
+
+class rectangle:
+    def __init__(self,length,breadth):
+        self.length=length
+        self.breadth=breadth
+    def area(self):
+        return self.length*self.breadth
+    def peri(self):
+        return 2*self.length+2*self.breadth
+length=int(input("enter the value of length:"))
+breadth=int(input("enter the value of breadth:"))
+r=rectangle(length,breadth)
+print("Area of rectangle is:",r.area())
+print("breadth of rectangle is:",r.peri())
+
+class abc():
+    def __init__(self,var):
+        self.var=var
+    def display(self):
+        print("var:",self.var)
+    def call(self):
+        self.var+=9000
+        self.display()
+obj=abc(100)
+obj.call()
+
+
+
+
+
+def globe(x):
+    return x*10
+class abc():
+    def __init__(self,var):
+        self.var=var
+    def display(self):
+        print("var:",self.var)
+    def modify(self):
+        self.var=globe(self.var)
+obj=abc(10)
+obj.display()
+obj.modify()
+obj.display()
+
+
+
+
+
